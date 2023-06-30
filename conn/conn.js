@@ -1,9 +1,11 @@
-const mongoose= require("mongoose")
+require("dotenv").config();
+const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/library").then((res)=>{
-    console.log("connection successfull to database")
-}).catch((err)=>{
-
-    console.log(err)
-})
-
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then((res) => {
+    console.log("connection successfull to database");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
