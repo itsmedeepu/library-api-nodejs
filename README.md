@@ -5,13 +5,13 @@ This is a RESTful API for a Library Management System built using Node.js, Expre
 ## Endpoints
 
 - `GET /library/home`: Returns the library home page.
-- `POST /library/books`: Saves a new book to the library.
-- `PUT /library/books/:id`: Updates a book's information by its ID.
-- `DELETE /library/books/:id`: Deletes a book from the library by its ID.
-- `GET /library/books/:id`: Retrieves a book from the library by its ID.
-- `GET /library/books`: Retrieves all books from the library.
-- `GET /library/books/author/:authname`: Retrieves books from the library by author name.
-- `GET /library/books/name/:bookname`: Retrieves books from the library by book name.
+- `POST /library/savebook`: Saves a new book to the library.
+- `PUT /library/updateBook/:id`: Updates a book's information by its ID.
+- `DELETE /library/delete/:id`: Deletes a book from the library by its ID.
+- `GET /library/getBookById/:id`: Retrieves a book from the library by its ID.
+- `GET /library/getAllBooks`: Retrieves all books from the library.
+- `GET /library/getBookByAuthor/:authname`: Retrieves books from the library by author name.
+- `GET /library/getBookByName/:bookname`: Retrieves books from the library by book name.
 
 ## Book Schema
 
