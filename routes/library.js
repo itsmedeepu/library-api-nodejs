@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
-//database connection
+
+const upload = require("../middleware/LibraryMiddleWare");
+
 const {
   saveBook,
   updateBook,
@@ -15,7 +17,7 @@ const {
 router.get("/home", (req, res) => {
   res.send("library home page ");
 });
-router.post("/savebook", saveBook);
+router.post("/savebook", upload.single("bookimage"), saveBook);
 
 router.put("/updateBook/:id", updateBook);
 router.delete("/delete/:id", DeleteBook);

@@ -1,6 +1,10 @@
 const Book = require("../model/books");
+
 const { getResponseStructure } = require("../assets/responseStructure");
 const saveBook = async (req, res) => {
+  req.body.bookimage = req.file.filename;
+  // console.log(req.body);
+
   const book = new Book(req.body);
   try {
     await book
