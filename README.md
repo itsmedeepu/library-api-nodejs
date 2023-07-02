@@ -56,6 +56,17 @@ To run the project on local machine, follow these steps.
 
 Feel free to modify the code according to your requirements and explore the different functionalities provided by the RESTful API for Library Management.
 
+## Output Response for endpoints will be in json format with structure below.
+``` bash
+{
+   "data": list of objects or object,
+   "statuscode":status code of request,
+   "message":message or information about the request
+}
+
+
+
+
      
      
 
