@@ -58,11 +58,12 @@ Feel free to modify the code according to your requirements and explore the diff
 
 ## Output Response for endpoints will be in json format with structure below.
 ``` bash
-{
-   "data": list of objects or object,
-   "statuscode":status code of request,
-   "message":message or information about the request
-}
+   {
+      "data": list of objects or object,
+      "statuscode":status code of request,
+      "message":message or information about the request
+   }
+```
 
 
 
