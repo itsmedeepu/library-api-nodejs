@@ -22,6 +22,7 @@ The book collection in the MongoDB database contains the following fields:
 - `authorname`: Name of the author.
 - `price`: Price of the book.
 - `present`: Boolean value indicating if the book is present in the library.
+- `bookimage`:stores path of the image.
 
 ## How to Clone this Project
 
